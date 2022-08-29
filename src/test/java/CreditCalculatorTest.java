@@ -9,24 +9,24 @@ public class CreditCalculatorTest {
     CreditCalculator calculator = new CreditCalculator();
 
     @Test
-    void calculateSumPerMonth() {
-        int expected = 1;
-        int actual = (int) calculator.sumPerMonth(sum, rate, period);
+    void testSumPerMonth() {
+        int expected = 31_796;
+        int actual = calculator.sumPerMonth(sum, rate, period);
         Assertions.assertEquals(expected, actual);
 
     }
 
     @Test
-    void calculateFullSumReturn() {
-        int expected = 1;
-        int actual = (int) calculator.fullSumReturn(sum, rate, period);
+    void testFullSumReturn() {
+        int expected = 1_907_808;
+        int actual = calculator.fullSumReturn(sum, rate, period);
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    void calculateOverPaySum() {
-        int expected = 1;
-        int actual = (int) calculator.overPaySum(sum, rate, period);
+    void testOverPaySum() {
+        int expected = 407_808;
+        int actual = calculator.overPaySum(sum, rate, period);
         Assertions.assertEquals(expected, actual);
     }
 }

@@ -1,20 +1,20 @@
 public class CreditCalculator {
     public int sumPerMonth(int sum, double rate, int period) {
-        /*double monthRate = (rate / 12) / 100;
-        double annuityRate = monthRate*(Math.pow(1+monthRate, period))/((Math.pow(1+monthRate, period))-1);*/
-        return (int) (0);
+        double monthRate = (rate / 12) / 100;
+        double annuityRate = monthRate*(Math.pow(1+monthRate, period))/((Math.pow(1+monthRate, period))-1);
+        return (int) (sum*annuityRate);
     }
 
     public int fullSumReturn(int sum, double rate, int period) {
-        /*double monthRate = (rate / 12) / 100;
-        double annuityRate = monthRate*(Math.pow(1+monthRate, period))/((Math.pow(1+monthRate, period))-1);*/
-        return (int) (0);
+        double monthRate = (rate / 12) / 100;
+        double annuityRate = monthRate*(Math.pow(1+monthRate, period))/((Math.pow(1+monthRate, period))-1);
+        return (int) ((sum*annuityRate) * period);
     }
 
     public int overPaySum(int sum, double rate, int period) {
-        /*double monthRate = (rate / 12) / 100;
-        double annuityRate = monthRate*(Math.pow(1+monthRate, period))/((Math.pow(1+monthRate, period))-1);*/
-        return (int) (0);
+        double monthRate = (rate / 12) / 100;
+        double annuityRate = monthRate*(Math.pow(1+monthRate, period))/((Math.pow(1+monthRate, period))-1);
+        return (int) ((sum*annuityRate)*period - sum);
     }
 
     public static void main(String[] args) {
